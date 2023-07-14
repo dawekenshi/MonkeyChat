@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;  
+}
+
+#sidebar {
+    border-right: 0.3vw white dashed;
+    width: 23vw;
+    display: flex;
+    align-items: center;
+    padding-top: 25vh;
+    flex-direction: column;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    gap: 5vh;
+    font-size: 1.28vw;
+}
+
+#sidebar > h1 {
+    border-bottom: 0.2vw solid white;
+}
+
+#mainthingie {
+    width: 77vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#msgzone {
+    height: 85vh;
+    padding-left: 5vw;
+    padding-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    overflow-y: auto;
+}
+
+#sendzone {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 2vh;
+}
+
+#msginp {
+    width: 60vw;
+    height: 5.5vh;
+    padding: 1vw;
+    font-size: 1.29vw;
+    transition: 0.3s ease-in-out;
+    border: 0.2vw solid gray;
+}
+
+#msginp:focus {
+    background-color: grey;
+    outline: none;
+    border: 0.2vw solid white;
+}
+
+#msgbtn {
+    border: none;
+    height: 5.5vh;
+    width: 6vw;
+    transition: 0.3s ease-in-out;
+    font-size: 1.1vw;
+}
+
+#msgbtn:hover {
+    background-color: grey;
+}
